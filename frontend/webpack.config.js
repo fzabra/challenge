@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -9,6 +10,12 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
+  devServer:{
+    port:4000,
+    contentBase: path.join(__dirname, 'public'),
+    writeToDisk: false,
+    hot:true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Creditas Challenge',
@@ -19,7 +26,8 @@ module.exports = {
       files: {
         css: ['style.css']
       }
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
   module: {
     rules: [

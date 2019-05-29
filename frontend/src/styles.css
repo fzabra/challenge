@@ -18,11 +18,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'ubuntu';
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 
 html, body {
-  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   height: 100%;
 }
 
@@ -202,6 +201,18 @@ body {
   padding: 10px 0;
   width: 100%;
   color: var(--tom-thumb);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--mountain-meadow);
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  color: var(--white);
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: bold;

@@ -25,6 +25,7 @@ export const toStringFormValues = values => {
 }
 
 export function Send(values) {
+  console.log("send")
   return new Promise((resolve, reject) => {
     try {
       resolve(toStringFormValues(values))
@@ -35,6 +36,7 @@ export function Send(values) {
 }
 
 export function Submit(formElement) {
+  console.log("submit")
   formElement.addEventListener('submit', function (event) {
     event.preventDefault()
     if (checkFormValidity(formElement)) {
@@ -89,4 +91,5 @@ export default class CreditasChallenge {
 
 document.addEventListener('DOMContentLoaded', function () {
   CreditasChallenge.initialize()
+  console.log("teste");
 })

@@ -82,7 +82,7 @@ Você precisa conhecer um pouco sobre o Git, que é uma ferramenta que nos ajuda
 git clone https://github.com/Creditas/challenge.git
 cd frontend/
 npm install
-npm start
+npm run dev
 ```
 
 Se tudo estiver ok, acesse a url [http://localhost:4000/](http://localhost:4000/)
